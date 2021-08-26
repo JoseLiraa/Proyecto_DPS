@@ -9,7 +9,7 @@ Creación de un un software multiplataforma para la materia de Diseño y Program
 - [x] [Android Studio](https://developer.android.com/studio)
 
 # Autores ✒️
-Todos del grupo 03 Teórico
+Todos del grupo Teórico 03 
 - Menjivar Medrano Génesis Noemi -  Programación, diseño, lógica y manuales.
 
 - Morales Lira José Antonio - Programación, diseño, lógica y manuales.
