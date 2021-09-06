@@ -13,11 +13,11 @@ Todos del grupo Teórico 03
 - Menjivar Medrano Génesis Noemi -  Programación, diseño, lógica y manuales.
 
 - Morales Lira José Antonio - Programación, diseño, lógica y manuales.
-- 
+
 - Rivas Fabián Josué Alexander - Programación, diseño, lógica y manuales.
-- 
+
 - Wilber Adonay Cruz Cruz - Programación, diseño, lógica y manuales.
-- 
+
 - Jorge Alberto Torres Lima - Programación, diseño, lógica y manuales.
 
 # Licencia 📝
