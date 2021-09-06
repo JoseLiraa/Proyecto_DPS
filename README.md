@@ -35,6 +35,6 @@ El licenciante no puede revocar estas libertades siempre que siga los términos 
 # Enlaces 🔗
 - Tablero [Nombre Tablero]()
 
-- Enlace a [MockUps]()
+- Enlace a [MockUps](https://drive.google.com/file/d/19_JcqSlE80WKUNCKC0FjKMlPGI0kYkDa/view?usp=sharing)
 
 - Enlace a [Documento]()
