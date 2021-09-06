@@ -13,11 +13,11 @@ Todos del grupo Teórico 03
 - Menjivar Medrano Génesis Noemi -  Programación, diseño, lógica y manuales.
 
 - Morales Lira José Antonio - Programación, diseño, lógica y manuales.
-
-- Moya Aguilar David Enrique - Programación, diseño, lógica y manuales.
-
+- 
 - Rivas Fabián Josué Alexander - Programación, diseño, lógica y manuales.
+- 
 - Wilber Adonay Cruz Cruz - Programación, diseño, lógica y manuales.
+- 
 - Jorge Alberto Torres Lima - Programación, diseño, lógica y manuales.
 
 # Licencia 📝
@@ -33,7 +33,7 @@ El licenciante no puede revocar estas libertades siempre que siga los términos 
 
 
 # Enlaces 🔗
-- Tablero [Nombre Tablero]()
+- Tablero [Carrito de compras SIMATIC](https://trello.com/b/QKy9sgJq/carrito-de-compras-simatic)
 
 - Enlace a [MockUps]()
 
