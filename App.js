@@ -1,13 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import FormCrearCuenta from './components/FormCrearCuenta';
+import { StyleSheet, SafeAreaView, View, ScrollView } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import Navigation from './src/navigation/Navigation';
 
 export default function App() {
   return (
    <>
-   <View style={styles.container}>
-  <FormCrearCuenta />
-  </View>
+   <NavigationContainer>
+     <Navigation></Navigation>
+   </NavigationContainer>
    </>
   );
 }

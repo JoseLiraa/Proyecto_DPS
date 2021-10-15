@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Text, StyleSheet, View, TextInput, Button, TouchableHighlight, Alert, ScrollView } from 'react-native';
+import {Text, StyleSheet, View, TextInput, Button, TouchableHighlight, Alert } from 'react-native';
 import shortid from 'shortid';
 
 const FormCrearCuenta = ({cuentas, setCuentas, guardarMostrarForm, guardarCuentaStorage}) => {
@@ -103,7 +103,7 @@ const FormCrearCuenta = ({cuentas, setCuentas, guardarMostrarForm, guardarCuenta
                         </TouchableHighlight>
                 </View>
 
-                <View style={styles.contieneBoton}>
+                <View style={styles.contieneEnlace}>
                     <Text style={{color:'black',fontWeight: 'bold', textAlign: 'center'}}>¿Ya tienes cuenta? Inicia Sesión</Text>
                 </View>
             </View>
@@ -113,15 +113,15 @@ const FormCrearCuenta = ({cuentas, setCuentas, guardarMostrarForm, guardarCuenta
 
         const styles = StyleSheet.create({
             formulario: {
-                
                 backgroundColor: '#FFF',
                 flex: 1,
                 marginLeft:35,
                 marginRight: 35,
+                marginVertical: 40,
                 paddingTop:5,
+                paddingBottom:25,
                 paddingLeft:5,
                 paddingRight:5,
-                paddingBottom:5,
                 borderColor: '#D0D1E4',
                 borderWidth:1,
                 borderRadius:30,
@@ -129,6 +129,12 @@ const FormCrearCuenta = ({cuentas, setCuentas, guardarMostrarForm, guardarCuenta
             contieneBoton:{
                 marginLeft:30,
                 marginRight:30,
+                marginTop:15,
+            },
+            contieneEnlace:{
+                marginLeft:30,
+                marginRight:30,
+                marginTop:5,
             },
             label: {
                 fontWeight: 'bold',
