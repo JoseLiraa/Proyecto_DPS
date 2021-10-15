@@ -1,6 +1,17 @@
 # Proyecto_DPS
 Creación de un un software multiplataforma para la materia de Diseño y Programación de Software Multiplataforma de la Universidad Don Bosco, San Salvador, El Salvador.
 
+# Instalar las siguientes dependencias
+- [x] npm install @react-navigation/native
+- [x] npm install @react-navigation/stack
+- [x] npm i shortid
+- [x] npm i react-native-gesture-handler
+- [x] npm i react-native-numeric-input
+- [x] npm install react-native-paper
+- [x] npm i react-native-elements
+- [x] npm i react-native-picker-select
+
+
 # Herramientas 🛠️
 - [x] [Node.js](https://nodejs.org/es/)
 
