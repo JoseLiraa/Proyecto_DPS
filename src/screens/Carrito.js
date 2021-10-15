@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { StyleSheet, View, Text, ScrollView } from "react-native";
 import Encabezado from "../../components/Encabezado";
 import Pie from "../../components/Pie";
 export default function Carrito() {
@@ -9,10 +9,6 @@ export default function Carrito() {
         <Encabezado />
         <Pie />
       </View>
-      <Button
-        title="Ir a Carrito"
-        onPress={() => navigation.navigate("carrito")}
-      ></Button>
     </ScrollView>
   );
 }
