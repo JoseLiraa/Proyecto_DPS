@@ -51,7 +51,7 @@ El licenciante no puede revocar estas libertades siempre que siga los términos 
 
 - Enlace a [Documento](https://drive.google.com/file/d/1ou3zBbxzJRIXOurj97q21uUW5poxWLuh/view?usp=sharing)
 
-- Enlace a [Manual de usuario](https://drive.google.com/file/d/1EKUFVoK9vUcmbp_wsS-0BdLOwEN4GHfb/view?usp=sharing)
+- Enlace a [Manual de usuario](https://drive.google.com/file/d/1Uu4GRpx2KbJNh42dzGL2rH0Y5i5bp61Q/view?usp=sharing)
 
 - Enlace a [Manual técnico](https://drive.google.com/file/d/1U8mE__TxKPoaHjLpoVAYOlSlc2ggzSEH/view?usp=sharing)
 
