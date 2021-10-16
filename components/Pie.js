@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#715cbb",
-    marginVertical: 48,
+    marginTop: 48,
     paddingTop: 35,
     paddingBottom: 20,
     justifyContent: "flex-end",
