@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Text, StyleSheet, View, TextInput, Button, TouchableHighlight, Alert } from 'react-native';
+import {Text, StyleSheet, View, TextInput, TouchableHighlight, Alert } from 'react-native';
 import shortid from 'shortid';
 
 const FormCrearCuenta = ({cuentas, setCuentas, guardarMostrarForm, guardarCuentaStorage}) => {
