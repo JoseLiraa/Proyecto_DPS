@@ -10,7 +10,7 @@ Creación de un un software multiplataforma para la materia de Diseño y Program
 
 # Autores ✒️
 Todos del grupo Teórico 03 
-- Menjivar Medrano Génesis Noemi -  Programación, diseño, lógica y manuales.
+- Menjivar Medrano Génesis Noemi - Programación, diseño, lógica y manuales.
 
 - Morales Lira José Antonio - Programación, diseño, lógica y manuales.
 
