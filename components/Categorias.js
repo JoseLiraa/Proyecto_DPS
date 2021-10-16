@@ -10,7 +10,7 @@ import {
 import colors from "../assets/Utils/colors";
 import Footercat from "./Footercat";
 
-export default function principal(props) {
+export default function Categorias(props) {
   const { navigation } = props;
   return (
     <>
@@ -155,7 +155,6 @@ const styles = StyleSheet.create({
   item1: {
     flex: 1,
     marginVertical: 50,
-    borderWidth: 0.8,
     borderColor: '#000000',
     margin: 80,
     flexDirection: 'column',

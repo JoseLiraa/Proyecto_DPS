@@ -4,13 +4,14 @@ import {
   StyleSheet,
   View,
   Image,
-  TouchableHighlight,
+  TouchableOpacity,
 } from "react-native";
 import NumericInput from "react-native-numeric-input";
 import { EvilIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 
-const ArticulosCarrito = () => {
+const ArticulosCarrito = (props) => {
+  const { navigation } = props;
   //variables para el formulario
 
   return (
@@ -84,12 +85,12 @@ const ArticulosCarrito = () => {
               >$6.00</Text>
             </View>
             <View style={styles.contieneBoton}>
-              <TouchableHighlight
-                onPress={() => crearNuevaCuenta()}
+              <TouchableOpacity
+                onPress={() => navigation.navigate("pago")}
                 style={styles.btnSubmit}
               >
                 <Text style={styles.textoSubmit}>Pagar</Text>
-              </TouchableHighlight>
+              </TouchableOpacity>
             </View>
             </View>
 

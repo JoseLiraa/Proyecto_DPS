@@ -12,7 +12,8 @@ import {
 import colors from '../assets/Utils/colors';
 import Footer from '../components/Footer';
 
-export default function App() {
+export default function memoriasUSB(props) {
+  const { navigation } = props;
   return (
     <>
       <ScrollView>
@@ -109,7 +110,7 @@ export default function App() {
             <Text style={styles.buttonText}>Agregar al carrito</Text>
           </TouchableOpacity>
         </View>
-        <View style={styles.item1}></View>
+        <View style={styles.item3}></View>
       </ScrollView>
     </>
   );
@@ -151,6 +152,14 @@ const styles = StyleSheet.create({
     borderColor: '#000000',
     margin: 80,
     flexDirection: 'column',
+    borderRadius: 12,
+  },
+  item3: {
+    flex: 1,
+    marginVertical: 78,
+    borderColor: "#000000",
+    margin: 80,
+    flexDirection: "column",
     borderRadius: 12,
   },
   item: {

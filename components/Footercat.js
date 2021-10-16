@@ -23,8 +23,8 @@ return (
 </View>
 <View style={styles.imgen}>
 <AntDesign name="user" size={24} color="white" />
-<Text style={styles.car2}>Prueba</Text>
-  <Text style={styles.car3}></Text>
+<Text style={styles.car2}>Juan</Text>
+  <Text style={styles.car3}>Perez</Text>
 </View>
 <View style={styles.viewFooter}>
 <Text style={styles.info}> Contáctanos </Text>

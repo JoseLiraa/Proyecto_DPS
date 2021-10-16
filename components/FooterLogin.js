@@ -1,10 +1,11 @@
-import { RefreshControlBase } from "react-native";
 import React from "react";
 import {
   StyleSheet,
   Text,
   View,
+  TouchableOpacity,
   SafeAreaView,
+  Alert,
 } from "react-native";
 import colors from "../assets/Utils/colors";
 import SearchBar from "./SearchBar";
@@ -12,7 +13,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 
-export default function Footer() {
+export default function FooterLogin() {
   return (
     <SafeAreaView style={styles.Header}>
       <Text style={styles.HeadApp}>SIMATIC</Text>
@@ -20,15 +21,19 @@ export default function Footer() {
       <View style={styles.buscador}>
         <SearchBar />
       </View>
+
       <View style={styles.imge}>
-        <AntDesign name="shoppingcart" size={24} color="white" />
+        <TouchableOpacity onPress={() => Alert.alert()} style={styles.button}>
+          <AntDesign name="shoppingcart" size={24} color="white" />
+        </TouchableOpacity>
+
         <Text style={styles.car}>Mi</Text>
         <Text style={styles.car1}>carrito</Text>
       </View>
       <View style={styles.imgen}>
         <AntDesign name="user" size={24} color="white" />
-        <Text style={styles.car2}>Juan</Text>
-        <Text style={styles.car3}>Perez</Text>
+        <Text style={styles.car2}>Iniciar</Text>
+        <Text style={styles.car3}>sesión</Text>
       </View>
       <View style={styles.viewFooter}>
         <Text style={styles.info}> Contáctanos </Text>

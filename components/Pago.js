@@ -13,7 +13,7 @@ import { Card } from "react-native-elements";
 import RNPickerSelect from "react-native-picker-select";
 import Footer from "./Footer";
 
-export default function Form() {
+export default function Pago() {
   return (
     <>
       <ScrollView>
@@ -118,7 +118,6 @@ const styles = StyleSheet.create({
     color: "#000000",
     marginTop: 45,
     textAlign: "left",
-    fontFamily: "Tahoma",
   },
   TextForm: {
     fontSize: 20,
@@ -126,14 +125,12 @@ const styles = StyleSheet.create({
     color: "#000000",
     marginTop: 25,
     textAlign: "center",
-    fontFamily: "Tahoma",
     padding: 35,
   },
   cardcolor: {
     backgroundColor: "red",
   },
   cardtext: {
-    fontFamily: "Tahoma",
     color: "red",
     fontSize: 12,
     textAlign: "center",

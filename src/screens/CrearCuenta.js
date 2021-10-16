@@ -15,8 +15,12 @@ export default function App(props) {
           <Pie />
         </View>
         <Button
-          title="Ir a Carrito"
-          onPress={() => navigation.navigate("carrito")}
+          title="Ir a proceso compra"
+          onPress={() => navigation.navigate("formcompra")}
+        ></Button>
+        <Button
+          title="Ir a pago"
+          onPress={() => navigation.navigate("pago")}
         ></Button>
       </ScrollView>
     </>
