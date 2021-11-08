@@ -12,6 +12,7 @@ import Footercat from "./Footercat";
 
 export default function Categorias(props) {
   const { navigation } = props;
+
   return (
     <>
       <ScrollView>

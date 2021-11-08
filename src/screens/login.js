@@ -1,4 +1,5 @@
-import React from "react";
+import React , {useState, useEffect} from "react";
+import { useNavigation } from '@react-navigation/core';
 import {
   StyleSheet,
   View,
@@ -9,40 +10,78 @@ import {
   ScrollView,
 } from "react-native";
 import { Card } from "react-native-elements";
-import FooterLogin from "../../components/FooterLogin";
+import Encabezado from "../../components/Encabezado";
 import { FontAwesome } from "@expo/vector-icons";
 import Pie from "../../components/Pie";
+import {auth} from '../../FirebaseAuth/firebase';
 
 export default function login(props) {
+
   const { navigation } = props;
+
+  const [email,setEmail]=useState('')
+  const [password,setPassword]=useState('')
+
+  const navigacion = useNavigation()
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged(user => {
+      if (user) {
+        navigacion.replace("categorias")
+      }
+    })
+
+    return unsubscribe
+  }, [])
+
+  const handleLogin = () => {
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then(userCredentials => {
+        const user = userCredentials.user;
+        console.log('Logged in with:', user.email);
+      })
+      .catch(error => alert(error.message))
+  }
+
 
   return (
     <>
     <ScrollView>
-      <FooterLogin />
+      <Encabezado />
       <Text style={styles.titulo}>INICIO DE SESIÓN</Text>
 
       <Card>
         <View>
           <TextInput
+            errorStyle={{ color: 'white', textAlign: 'center' }}
+            keyboardType="email-address"
+            value={email}
+            onChangeText={text => setEmail(text)}
             placeholder="*Correo electrónico"
             style={[styles.input, styles.inputTabs]}
           />
 
           <TextInput
+            value={password}
+            onChangeText={text => setPassword(text)}
             placeholder="*Contraseña"
             style={[styles.input, styles.inputTabs]}
             secureTextEntry
           />
 
+          <TouchableOpacity
+          onPress={() => navigation.navigate("recu")}
+          >
           <Text style={styles.sub}>¿Olvidaste tu contraseña?</Text>
+          </TouchableOpacity>
         </View>
 
         <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate("categorias")}
+        style={styles.button1}
+        onPress={handleLogin}
         >
-          <Text style={styles.buttonText}>Iniciar Sesión</Text>
+          <Text style={styles.buttonText1}>Iniciar Sesión</Text>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={() => Alert.alert("Iniciando con Gmail")} style={styles.button}>
@@ -68,7 +107,7 @@ export default function login(props) {
 const styles = StyleSheet.create({
   titulo: {
     textAlign: "center",
-    marginTop: 60,
+    marginTop: 35,
     fontWeight: "bold",
     fontSize: 18,
   },
@@ -102,7 +141,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     margin: 10,
     width: "45%",
-    marginTop: 19,
+    marginTop: 8,
     marginHorizontal: 82,
   },
   button1: {

@@ -1,18 +1,23 @@
-import { RefreshControlBase } from "react-native";
+import { useNavigation } from '@react-navigation/core'
 import React from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-  SafeAreaView,
-} from "react-native";
+import {StyleSheet, Text, View, TouchableOpacity,SafeAreaView} from 'react-native';
 import colors from "../assets/Utils/colors";
 import SearchBar from "./SearchBar";
 import { AntDesign } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
+import {auth} from '../FirebaseAuth/firebase';
 
 export default function Footer() {
+  const navigation = useNavigation()
+  const handleSignOut = () => {
+    auth
+      .signOut()
+      .then(() => {
+        navigation.replace("login")
+      })
+      .catch(error => alert(error.message))
+    }
   return (
     <SafeAreaView style={styles.Header}>
       <Text style={styles.HeadApp}>SIMATIC</Text>
@@ -25,11 +30,16 @@ export default function Footer() {
         <Text style={styles.car}>Mi</Text>
         <Text style={styles.car1}>carrito</Text>
       </View>
+      <TouchableOpacity
+      onPress={handleSignOut}
+      >
       <View style={styles.imgen}>
-        <AntDesign name="user" size={24} color="white" />
-        <Text style={styles.car2}>Juan</Text>
-        <Text style={styles.car3}>Perez</Text>
+      <AntDesign name="user" size={24} color="white" />
+      <Text style={styles.car2}>Cerrar</Text>
+      <Text style={styles.car3}>Sesión</Text>
       </View>
+      </TouchableOpacity>
+
       <View style={styles.viewFooter}>
         <Text style={styles.info}> Contáctanos </Text>
         <View style={styles.info2}>

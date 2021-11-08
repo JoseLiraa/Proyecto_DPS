@@ -4,8 +4,9 @@ import FormCrearCuenta from "../../components/FormCrearCuenta";
 import Encabezado from "../../components/Encabezado";
 import Pie from "../../components/Pie";
 
-export default function App(props) {
-  const { navigation } = props;
+export default function CrearCuenta(props) {
+  const { navegation } = props;
+
   return (
     <>
       <ScrollView>
@@ -14,14 +15,6 @@ export default function App(props) {
           <FormCrearCuenta />
           <Pie />
         </View>
-        <Button
-          title="Ir a proceso compra"
-          onPress={() => navigation.navigate("formcompra")}
-        ></Button>
-        <Button
-          title="Ir a pago"
-          onPress={() => navigation.navigate("pago")}
-        ></Button>
       </ScrollView>
     </>
   );

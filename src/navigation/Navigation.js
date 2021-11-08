@@ -9,6 +9,7 @@ import MemoriasUSB from '../../components/MemoriasUSB';
 import Multifuncionales from '../../components/Multifuncionales';
 import Pago from '../../components/Pago';
 import FormCompra from '../../components/FormCompra';
+import RecuperarContra from '../screens/RecuperarContra';
 
 const Stack = createStackNavigator();
 export default function Navigation(){
@@ -23,6 +24,7 @@ return(
 <Stack.Screen name="carrito" component={Carrito} options={{title:'Carrito'}}/>
 <Stack.Screen name="formcompra" component={FormCompra} options={{title:'Procesos de compra'}}/>
 <Stack.Screen name="pago" component={Pago} options={{title:'Pago'}}/>
+<Stack.Screen name="recu" component={RecuperarContra} options={{title:'Recuperar Contraseña'}}/>
 </Stack.Navigator>
 );
 }
