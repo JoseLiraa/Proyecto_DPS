@@ -11,6 +11,9 @@ Creación de un un software multiplataforma para la materia de Diseño y Program
 - [x] npm install react-native-paper
 - [x] npm i react-native-elements
 - [x] npm i react-native-picker-select
+- [x] npm i firebase
+- [x] npm i @react-navigation/core
+
 
 
 # Herramientas 🛠️
